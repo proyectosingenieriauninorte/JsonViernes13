@@ -26,8 +26,6 @@
                     <option>CVV</option>
                     <option>IMEI</option>
                 </select>
-                <label for="numRows"># Rows:</label>
-                <input type="number" id="numRows">
             </div>
             <div class="buttons-container">
                 <button id="addColumn">Add Column</button>
@@ -36,10 +34,9 @@
         </div>
 
         <div class="table-container">
-          <h2>API PREVIEW</h2>
-          <div class="table-buttons">
-            <button id="downloadCsv">Download as a CSV</button>
-          </div>
+          <h2>DATA PREVIEW</h2>
+          <label for="numRows"># Rows:</label>
+                <input type="number" id="numRows">
           <div class="scrollable-table">
               <table border="3">
                   <tr>
@@ -51,10 +48,13 @@
     </div>
 
     <div id="configPanel">
-        <h2>API CONFIGURATION</h2>
-        <label for="apiName">API Name:</label>
+        <h2>JSON CONFIGURATION</h2>
+        <label for="apiName">JSON Name:</label>
         <input type="text" id="apiName">
-        <button id="generateApi">Generate API</button>
+        <div class="table-buttons">
+            <button id="generateApi">Generate JSON</button>
+            <button id="downloadCsv">Download as a CSV</button>
+        </div>
         <pre id="apiOutput"></pre>
     </div>
 
@@ -65,6 +65,7 @@
     <script src="Untitled-2.js"></script>
     <script src="Untitled-3.js"></script>
     <script src="Untitled-4.js"></script>
+    
 </body>
 </html>
 

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ff8c00; /* Texto naranja */
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#datasetPanel, .table-container, #configPanel {
+    background-color: #262626; /* Fondo gris oscuro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    width: 48%;
+}
+
+.table-container {
+    width: 48%; /* Ajusta el ancho según sea necesario */
+}
+
+#configPanel {
+    background-color: #262626; /* Fondo gris oscuro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto; /* Centrado horizontal */
+    padding: 20px;
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    text-align: center; /* Centra el contenido */
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"], input[type="number"], select {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    width: auto;
+}
+
+button {
+    background-color: #750909; /* Rojo oscuro */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500; /* Naranja */
+}
+
+.buttons-container {
+    text-align: center; /* Centra los botones */
+}
+
+.buttons-container button {
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+.scrollable-table {
+    max-height: 450px; /* Ajusta según sea necesario */
+    overflow-x: auto; /* Desplazamiento horizontal */
+    overflow-y: auto; /* Desplazamiento vertical */
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 98%; /* Asegura que la tabla se expanda al tamaño del contenedor */
+}
+
+
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Evita que el contenido de la celda se ajuste a la línea siguiente */
+}
+
+th {
+    background-color: #ffffff;
+}
+
+h1.halloween-title {
+    color: #ff8c00; /* Naranja */
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.ghost {
+    width: 100px;
+    height: 100px;
+    background: url('Jason.webp') no-repeat; /* Reemplaza con la URL de tu imagen de fantasma */
+    background-size: cover;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -120px; /* Inicia fuera de la pantalla */
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.ghost.show {
+    bottom: 30px; /* Sube y se hace visible */
+    opacity: 1;
+}

@@ -8,14 +8,8 @@ Json Viernes 13, es una pagina web capaz de generar datos aleatorios de todo tip
 ```
 git clone https://github.com/proyectosuninorte/JsonViernes13
 ```
-2. cd en el repositorio clonado y ejecutar:
-```
-npm install
-```
-3. Iniciar
-```
-npm start
-```
+2. Abrir la carpeta y ejecutar el archivo html (index.html)
+
 ## Autores
 
 * [Zenen Contreras](https://github.com/ZenenContreras)

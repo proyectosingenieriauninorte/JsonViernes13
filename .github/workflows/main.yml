@@ -28,5 +28,5 @@ jobs:
           git status
           docker stop jsonviernes13-app
           docker rm jsonviernes13-app
-          docker build -t rutaestrella .
+          docker build -t jsonviernes13 .
           docker run -d -it -p 5009:80 --restart unless-stopped --name jsonviernes13-app jsonviernes13
